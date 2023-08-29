@@ -1,0 +1,16 @@
+"","Min","Max","Sample mean","Missingness"
+"Normalized losses",65,256,122,0.0133
+"Wheelbase",86.6,120.9,98.76,0
+"Length",141.1,208.1,174.05,0
+"Width",60.3,72.3,65.91,0
+"Height",47.8,59.8,53.72,0
+"Curb weight",1488,4066,2555.57,0
+"Engine size",61,326,126.91,0
+"Bore",2.54,3.94,3.33,0.0013
+"Stroke",2.07,4.17,3.26,0.0013
+"Compression ratio",7,23,10.14,0
+"Horsepower",48,288,104.26,7e-04
+"Peak RPM",4150,6600,5125.37,7e-04
+"City MPG",13,49,25.22,0
+"Highway MPG",16,54,30.75,0
+"Price",5118,45400,13207.13,0.0013
