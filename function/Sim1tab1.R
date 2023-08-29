@@ -1,0 +1,55 @@
+sim1.tab=function(m,aic,bic,icl,ari,ccr,mspe)
+{
+  table=matrix(NA,5,3)
+  table_f=matrix(NA,5,3)
+  table_s=matrix(NA,5,3)
+  colnames(table)=colnames(table_f)=colnames(table_s)=c("MCFA","MCtFA","MCrstFA")
+  rownames(table)=c("BIC","ICL","ARI","CCR","MSPE")
+  rownames(table_f)=c("BIC(freq)","ICL(freq)","ARI(freq)","CCR(freq)","MSPE(freq)")
+  rownames(table_s)=c("BIC(sd)","ICL(sd)","ARI(sd)","CCR(sd)","MSPE(sd)")
+  f_n_mspe=f_t_mspe=f_rst_mspe=c()
+  f_n_ccr=f_t_ccr=f_rst_ccr=c()
+  f_n_ari=f_t_ari=f_rst_ari=c()
+  f_n_bic=f_t_bic=f_rst_bic=c()
+  f_n_icl=f_t_icl=f_rst_icl=c()
+  for(i in 1:m)
+  {
+    #BIC freq
+    ifelse(order(bic[i,],decreasing = F)[1]==1, {f_n_bic[i]=1},{f_n_bic[i]=0})
+    ifelse(order(bic[i,],decreasing = F)[1]==2, {f_t_bic[i]=1},{f_t_bic[i]=0})
+    ifelse(order(bic[i,],decreasing = F)[1]==3, {f_rst_bic[i]=1},{f_rst_bic[i]=0})
+    #ICL freq
+    ifelse(order(icl[i,],decreasing = F)[1]==1, {f_n_icl[i]=1},{f_n_icl[i]=0})
+    ifelse(order(icl[i,],decreasing = F)[1]==2, {f_t_icl[i]=1},{f_t_icl[i]=0})
+    ifelse(order(icl[i,],decreasing = F)[1]==3, {f_rst_icl[i]=1},{f_rst_icl[i]=0})
+    #ARI freq
+    ifelse(order(ari[i,],decreasing = T)[1]==1, {f_n_ari[i]=1},{f_n_ari[i]=0})
+    ifelse(order(ari[i,],decreasing = T)[1]==2, {f_t_ari[i]=1},{f_t_ari[i]=0})
+    ifelse(order(ari[i,],decreasing = T)[1]==3, {f_rst_ari[i]=1},{f_rst_ari[i]=0})
+    #CCR freq
+    ifelse(order(ccr[i,],decreasing = T)[1]==1, {f_n_ccr[i]=1},{f_n_ccr[i]=0})
+    ifelse(order(ccr[i,],decreasing = T)[1]==2, {f_t_ccr[i]=1},{f_t_ccr[i]=0})
+    ifelse(order(ccr[i,],decreasing = T)[1]==3, {f_rst_ccr[i]=1},{f_rst_ccr[i]=0})
+    #MSPE freq
+    ifelse(order(mspe[i,],decreasing = F)[1]==1, {f_n_mspe[i]=1},{f_n_mspe[i]=0})
+    ifelse(order(mspe[i,],decreasing = F)[1]==2, {f_t_mspe[i]=1},{f_t_mspe[i]=0})
+    ifelse(order(mspe[i,],decreasing = F)[1]==3, {f_rst_mspe[i]=1},{f_rst_mspe[i]=0})
+  }
+  #table
+  table[1,]=c(mean(bic[,1]),mean(bic[,2]),mean(bic[,3]))
+  table[2,]=c(mean(icl[,1]),mean(icl[,2]),mean(icl[,3]))
+  table[3,]=c(mean(ari[,1]),mean(ari[,2]),mean(ari[,3]))
+  table[4,]=c(mean(ccr[,1]),mean(ccr[,2]),mean(ccr[,3]))
+  table[5,]=c(mean(mspe[,1]),mean(mspe[,2]),mean(mspe[,3]))
+  table_f[1,]=c(sum(f_n_bic),sum(f_t_bic),sum(f_rst_bic))
+  table_f[2,]=c(sum(f_n_icl),sum(f_t_icl),sum(f_rst_icl))
+  table_f[3,]=c(sum(f_n_ari),sum(f_t_ari),sum(f_rst_ari))
+  table_f[4,]=c(sum(f_n_ccr),sum(f_t_ccr),sum(f_rst_ccr))
+  table_f[5,]=c(sum(f_n_mspe),sum(f_t_mspe),sum(f_rst_mspe))
+  table_s[1,]=c(sd(bic[,1]),sd(bic[,2]),sd(bic[,3]))
+  table_s[2,]=c(sd(icl[,1]),sd(icl[,2]),sd(icl[,3]))
+  table_s[3,]=c(sd(ari[,1]),sd(ari[,2]),sd(ari[,3]))
+  table_s[4,]=c(sd(ccr[,1]),sd(ccr[,2]),sd(ccr[,3]))
+  table_s[5,]=c(sd(mspe[,1]),sd(mspe[,2]),sd(mspe[,3]))
+  return(list(TABLE=round(table,2),TABLE.sd=round(table_s,2),TABLE.freq=table_f))
+}
