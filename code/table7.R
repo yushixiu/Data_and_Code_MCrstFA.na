@@ -1,0 +1,11 @@
+library(mvtnorm)
+library(moments)
+library(MomTrunc)
+library(cubature)
+load(paste(WD.PATH, 'data/CKD.RData', sep=''))
+source(paste(WD.PATH, 'function/MCrSTFA_na_se.R', sep=''))
+#true.clus
+Y.na=scale(da[,1:11])
+fit_se=SE.MCrSTFA.na(Y.na=Y.na, w=fit.rst.na[[4]]$para$w, xi=fit.rst.na[[4]]$para$xi, A=fit.rst.na[[4]]$para$A, D=fit.rst.na[[4]]$para$D, Om=fit.rst.na[[4]]$para$Om, la=fit.rst.na[[4]]$para$la, nu=fit.rst.na[[4]]$para$nu, true.clus=true.clus, eqnu=T)
+fit_se=as.matrix(round(fit_se,3))
+write.csv(fit_se, paste(WD.PATH, 'results/Table7.csv', sep=''), row.names = TRUE)
