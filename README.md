@@ -6,7 +6,7 @@
 
 For questions, comments or remarks about the code please contact
 responsible author, Tsung-I Lin
-([tilin\@nchu.edu.tw](mailto:tilin@nchu.edu.tw){.email}).
+([tilin\@nchu.edu.tw](mailto:tilin@nchu.edu.tw)).
 
 ### Configurations
 
@@ -119,9 +119,7 @@ source the 'rMST.R' scripts in subfolder './function/', and then run the
 './results/'.
 
        (2) 'fig2.R' main script for drawing the 3D scatter plots of observed data points with 20% missing values and their predicted values by the MCFA, MCtFA and MCrstFA models;
-
        (3) 'table1.R' main script for performing comparisons of MCFA, MCtFA and MCrstFA models based on 100 replications;
-
        (4) 'simulation1.R' main script for re-generating part of intermediate results for Experiment 1;
 
 ###### Note for Section 5.1 - Experiment 1:
