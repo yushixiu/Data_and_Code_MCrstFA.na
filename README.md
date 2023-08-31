@@ -1,4 +1,4 @@
-# Data-and-Code-for-CAM
+# Data and Code
 
 ## Supplementary Material for "Mixtures of restricted skew-t common factor analyzers with missing information" by Wan-Lun Wang, Luis M. Castro, Shi-Xiu Yu and Tsung-I Lin
 
