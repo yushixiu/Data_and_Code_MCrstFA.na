@@ -4,16 +4,13 @@
 
 ### Author responsible for the code
 
-For questions, comments or remarks about the code please contact
-responsible author, Tsung-I Lin
-([tilin\@nchu.edu.tw](mailto:tilin@nchu.edu.tw)).
+For questions, comments or remarks about the code please contact responsible author, Tsung-I Lin (tilin@nchu.edu.tw)
 
 ### Configurations
 
 The code was written/evaluated in R with the following software
 versions: R version 4.2.1 (2022-06-23 ucrt) Platform:
-x86_64-w64-mingw32/x64 (64-bit) Running under: Windows 10 x64 (build
-22621)
+x86_64-w64-mingw32/x64 (64-bit) Running under: Windows 10 x64 (build 22621)
 
 Matrix products: default
 
@@ -244,12 +241,9 @@ The resulting Tables 4-7 and Figures 7-8 has been stored in the
 ###### Note for ./results:
 
 Since the initial seed is not given, the numerical results in
-'./results/Sim1_TabFig', './results/Sim2_TableS.1(r=0)',
-'./results/Sim2_TableS.2(r=10)', './results/Sim2_TableS.3(r=20)' and
-'./results/Sim2_TableS.4(r=30)' obtained by each program execution may
-not be the same.
+'./results/Sim1_TabFig', './results/Sim2_TableS.1(r=0)', './results/Sim2_TableS.2(r=10)', './results/Sim2_TableS.3(r=20)' and
+'./results/Sim2_TableS.4(r=30)' obtained by each program execution may not be the same.
 
 ###### Additional Remark
 
-One can directly run each 'source(.)' described in 'master.R' file in
-the seperate R session to obtain the results.
+One can directly run each 'source(.)' described in 'master.R' file in the seperate R session to obtain the results.
