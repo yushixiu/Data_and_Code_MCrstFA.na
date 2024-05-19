@@ -112,39 +112,40 @@ R codes for the implementation of our methodology are provided.
 
 To draw the 3-dimensional density contours as shown in Figure 1, please
 source the 'rMST.R' scripts in subfolder './function/', and then run the
-'fig1.R' scripts in subfolder './code/'. The results have been stored in
+'figS.1.R' scripts in subfolder './code/'. The results have been stored in
 './results/'.
 
-       (2) 'fig2.R' main script for drawing the 3D scatter plots of observed data points with 20% missing values and their predicted values by the MCFA, MCtFA and MCrstFA models;
-       (3) 'table1.R' main script for performing comparisons of MCFA, MCtFA and MCrstFA models based on 100 replications;
-       (4) 'simulation1.R' main script for re-generating part of intermediate results for Experiment 1;
+       (2) 'figS.1.R' main script for drawing the 3D scatter plots of observed data points with 20% missing values and their predicted values by the MCFA, MCtFA and MCrstFA models;
+       (3) 'table1.R' main script for performing comparisons of MCFA, MCtFA and MCrstFA models based on 100 replications under the MNIG distribution;
+       (4) 'table2.R' main script for performing comparisons of MCFA, MCtFA and MCrstFA models based on 100 replications under the MSL distribution;
+       (5) 'simulation1.R' main script for re-generating part of intermediate results for Experiment 1;
 
 ###### Note for Section 5.1 - Experiment 1:
 
-R code 'simulation1.R' generates the intermediate results of Table 1 and
-Figure 2 in the manuscript. Because the code takes a huge amount of time
+R code 'simulation1.R' generates the intermediate results of Tables 1-2 and
+Figure S.1 in the manuscript. Because the code takes a huge amount of time
 to run, we record these intermediate results so that one can use the R
-codes 'fig2.R' and 'table1.R' to obtain the final results based on files
+codes 'figS.1.R', 'table1.R' and 'table2.R' to obtain the final results based on files
 stored in './results/' subfolders.
 
-To reproduce the results presented in Figure 2, please source the
-'rMNIG.R' scripts in subfolder './function/', and then run the 'fig2.R'
+To reproduce the results presented in Figure S.1, please source the
+'rMNIG.R' scripts in subfolder './function/', and then run the 'figS.1.R'
 scripts in subfolder './code/' and the '.txt' files in the subfolders
-'./results/Sim1_TabFig'. To reproduce the results presented in Table 1,
+'./results/Sim1_TabFig'. To reproduce the results presented in Tables 1-2,
 please source the 'rMNIG.R', 'MCFA.na.R', 'MCtFA.na.R', 'MCrstFA.na.R',
 'gener_na.R', 'initial.R' and 'Sim1tab1.R' scripts in subfolder
-'./function/', and then run the 'table1.R' scripts in subfolder
+'./function/', and then run the 'table1.R' and 'table2.R' scripts in subfolder
 './code/' and the '.txt' files in the subfolders
 './results/Sim1_TabFig'.
 
-       (5) 'simulation2.R' main script for re-generating part of intermediate results for Experiment 2;
-       (6) 'tableS.1.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=0% missing value scenario;
-       (7) 'tableS.2.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=10% missing value scenario;
-       (8) 'tableS.3.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=20% missing value scenario;
-       (9) 'tableS.4.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=30% missing value scenario;
-       (10) 'RMSE.R' main script for calculating root mean square error of parameter estimates;
-       (11) 'STD.R' main script for calculating sample standard deviation of the parameters;
-       (12) 'IMSE.R' main script for calculating the information matrix-based standard errors of parameter estimates;
+       (6) 'simulation2.R' main script for re-generating part of intermediate results for Experiment 2;
+       (7) 'tableS.1.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=0% missing value scenario;
+       (8) 'tableS.2.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=10% missing value scenario;
+       (9) 'tableS.3.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=20% missing value scenario;
+       (10) 'tableS.4.R' main script for RMSE, STD and IMSE values of parameter estimates for various sample sizes in the r=30% missing value scenario;
+       (11) 'RMSE.R' main script for calculating root mean square error of parameter estimates;
+       (12) 'STD.R' main script for calculating sample standard deviation of the parameters;
+       (13) 'IMSE.R' main script for calculating the information matrix-based standard errors of parameter estimates;
 
 ###### Note for Section 5.2 - Experiment 2:
 
@@ -171,33 +172,33 @@ TableS.3 just run the '.txt' files in the subfolders
 files in the subfolders './results/Sim2_TableS.4(r=30)', and then run
 the 'RMSE.R', 'STD.R' and 'IMSE.R' scripts in subfolder './code/'.
 
-       (13) 'table2.R' main script for providing precise information on some selected attributes;
-       (14) 'fig3.R' main script for drawing BIC and ICL diagrams for the MCFA, MCtFA and MCrstFA models fitted to the automobile dataset;
-       (15) 'fig4.R' main script for drawing the histograms and pairwise scatter plots of a subset of continuous variables in the automobile dataset;
-       (16) 'fig5.R' main script for drawing stacked bar charts of a subset of categorical attributes in the automobile dataset;
-       (17) 'fig6.R' main script for drawing 2D and 3D scatter plots protracting by the first, second and fifth factors of the automobile dataset;
+       (14) 'table3.R' main script for providing precise information on some selected attributes;
+       (15) 'fig2.R' main script for drawing BIC and ICL diagrams for the MCFA, MCtFA and MCrstFA models fitted to the automobile dataset;
+       (16) 'fig3.R' main script for drawing the histograms and pairwise scatter plots of a subset of continuous variables in the automobile dataset;
+       (17) 'figS.2.R' main script for drawing stacked bar charts of a subset of categorical attributes in the automobile dataset;
+       (18) 'figS.3.R' main script for drawing 2D and 3D scatter plots protracting by the first, second and fifth factors of the automobile dataset;
 
 ###### Note for Section 6.1 - Automobile dataset:
 
-Figures 3-6 just load 'automobile.RData' files in the './data/'. The
-resulting Table 2 and Figures 3-6 has been stored in the './results/'
+Figures 2-3 and Figures S.2-S.3 just load 'automobile.RData' files in the './data/'. The
+resulting Table 3, Figures 2-3 and Figures S.2-S.3 has been stored in the './results/'
 subfolder.
 
-       (18) 'table4.R' main script for summarizing the missing information in the CKD dataset;
-       (19) 'table5.R' main script for calculating the sample correlation coefficients for each pair of attributes within the two groups;
-       (20) 'table6.R' main script for comparing the clustering performance under the MCFA, MCtFA and MCrstFA models by ARI and CCR;
-       (21) 'table7.R' main script for showing the ML estimates and standard errors for the best chosen model;
-       (22) 'fig7.R' main script for drawing the pairwise scatter plots and the marginal histograms;
-       (23) 'fig8.R' main script for drawing the BIC and ICL plots for the MCFA, MCtFA and MCrstFA models fitted to the CKD dataset.
+       (19) 'table4.R' main script for summarizing the missing information in the CKD dataset;
+       (20) 'tableS.5.R' main script for calculating the sample correlation coefficients for each pair of attributes within the two groups;
+       (21) 'table5.R' main script for comparing the clustering performance under the MCFA, MCtFA and MCrstFA models by ARI and CCR;
+       (22) 'tableS.7.R' main script for showing the ML estimates and standard errors for the best chosen model;
+       (23) 'figS.4.R' main script for drawing the pairwise scatter plots and the marginal histograms;
+       (24) 'fig4.R' main script for drawing the BIC and ICL plots for the MCFA, MCtFA and MCrstFA models fitted to the CKD dataset.
 
 ###### Note for Section 6.2 - Chronic kidney disease (CKD) dataset:
 
-Tables 6-7 and Figures 7-8 just load 'CKD.RData' files in the './data/'.
-The resulting Tables 4-7 and Figures 7-8 has been stored in the
+Tables 4-5, Tables S.5,S.7 and Figures 4,S.4 just load 'CKD.RData' files in the './data/'.
+The resulting Tables 4-5, Tables S.5,S.7 and Figures 4,S.4 has been stored in the
 './results/' subfolder.
 
-       (24) 'autoRdata.R' main script for model fitting to automobile dataset results and saved in 'automobile.RData';
-       (25) 'ckdRdata.R' main script for model fitting to CKD dataset results and saved in 'CKD.RData'.
+       (25) 'autoRdata.R' main script for model fitting to automobile dataset results and saved in 'automobile.RData';
+       (26) 'ckdRdata.R' main script for model fitting to CKD dataset results and saved in 'CKD.RData'.
 
 #### Subfolder: ./data
 
