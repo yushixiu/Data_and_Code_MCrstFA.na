@@ -61,8 +61,8 @@ Please extract the file "Data-and-Code-JMVA.zip" to the "current working
 directory" of the R package. The getwd() function shall determine an
 absolute pathname of the "current working directory".
 
-Before running the codes 'fig1.R', 'fig2.R', 'fig4.R', 'fig5.R',
-'fig6.R', 'table1.R', 'tableS.1.R', 'tableS.2.R', 'tableS.3.R',
+Before running the codes 'fig1.R', 'fig3.R', 'figS.1.R',
+'figS.2.R', 'figS.3.R', 'table1.R', 'table2.R', 'tableS.1.R', 'tableS.2.R', 'tableS.3.R',
 'tableS.4.R', 'simulation1.R' and 'simulation2.R', one needs to install
 the following R packages:
 
