@@ -98,7 +98,7 @@ R codes for the implementation of our methodology are provided.
        (5) 'MCrstFA.na.R' for calculating the parameter estimates via the ECME algorithm under the MCrstFA model with missing information;
        (6) 'gener_na.R' for randomly generating missing values;
        (7) 'rMST.R' for calculating the pdf and cdf of the restricted skew-t distributions
-       (8) 'rMNIG.R' for calculating the pdf of the MNIG distributions;
+       (8) 'rMNIG_rMSL.R' for calculating the pdf of the MNIG distributions and the MSL distributions;
        (9) 'MCrSTFA_na_se.R' for computing the score functions of parameter estimates; and
        (10) 'Sim1tab1.R' for computing the BIC, ICL, ARI, CCR, and MSPE values in Table1.
 
@@ -132,7 +132,7 @@ To reproduce the results presented in Figure S.1, please source the
 'rMNIG.R' scripts in subfolder './function/', and then run the 'figS.1.R'
 scripts in subfolder './code/' and the '.txt' files in the subfolders
 './results/Sim1_TabFig'. To reproduce the results presented in Tables 1-2,
-please source the 'rMNIG.R', 'MCFA.na.R', 'MCtFA.na.R', 'MCrstFA.na.R',
+please source the 'rMNIG_rMSL.R', 'MCFA.na.R', 'MCtFA.na.R', 'MCrstFA.na.R',
 'gener_na.R', 'initial.R' and 'Sim1tab1.R' scripts in subfolder
 './function/', and then run the 'table1.R' and 'table2.R' scripts in subfolder
 './code/' and the '.txt' files in the subfolders
