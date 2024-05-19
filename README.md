@@ -57,7 +57,7 @@ miniUI_0.1.1.1\
 
 ### Descriptions of the codes
 
-Please extract the file "Data-and-Code-CAM.zip" to the "current working
+Please extract the file "Data-and-Code-JMVA.zip" to the "current working
 directory" of the R package. The getwd() function shall determine an
 absolute pathname of the "current working directory".
 
