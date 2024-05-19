@@ -1,6 +1,6 @@
 # Data and Code
 
-## Supplementary Material for "Mixtures of restricted skew-t common factor analyzers with missing information" by Wan-Lun Wang, Luis M. Castro, Shi-Xiu Yu and Tsung-I Lin
+## Supplementary Material for "Mixtures of skewed and heavy-tailed common factor analyzers for learning incomplete multivariate data" by Wan-Lun Wang, Luis M. Castro, Shi-Xiu Yu and Tsung-I Lin
 
 ### Author responsible for the code
 
