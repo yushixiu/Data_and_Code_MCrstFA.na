@@ -1,4 +1,3 @@
-#library(moments)
 load(paste(WD.PATH, 'data/CKD.RData', sep=''))
 nFA = fit.n.na[[4]]$uhat.new
 tFA = fit.t.na[[4]]$uhat
@@ -22,7 +21,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -32,7 +31,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='darkorange')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='chartreuse3')
 
 
 # Factor 2
@@ -46,7 +45,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -56,7 +55,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='darkorange')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='chartreuse3')
 
 # Factor 3
 par(mar=c(0,0,0,0))
@@ -69,7 +68,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -79,7 +78,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='darkorange')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='chartreuse3')
 
 # Factor 4
 par(mar=c(0,0,0,0))
@@ -92,7 +91,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -102,7 +101,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='darkorange')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='chartreuse3')
 title(main = list("(a) MCrstFA vs. MCFA", cex = 2), outer=T, line = -2)
 dev.off()
 
@@ -126,7 +125,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -136,7 +135,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCtFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='deeppink')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='sienna1')
 
 
 # Factor 2
@@ -150,7 +149,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -160,7 +159,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCtFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='deeppink')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='sienna1')
 
 # Factor 3
 par(mar=c(0,0,0,0))
@@ -173,7 +172,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -183,7 +182,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCtFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='deeppink')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='sienna1')
 
 # Factor 4
 par(mar=c(0,0,0,0))
@@ -196,7 +195,7 @@ top1 = max(c(x1hist$counts, y1hist$counts))
 
 # top histogram
 par(mar=c(0,0,0,0))
-barplot(x1hist$counts, axes=FALSE, space=0, col='aquamarine')
+barplot(x1hist$counts, axes=FALSE, space=0, col='dodgerblue')
 
 # scatter plot
 par(mar=c(0,0,0,0))
@@ -206,7 +205,7 @@ mtext('MCrstFA', side=1, line=2, cex=0.8)
 mtext('MCtFA', side=2, line=2, cex=0.8)
 # side histogram
 par(mar=c(0,0,0,1))
-barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='deeppink')
+barplot(y1hist$counts, axes=FALSE, space=0, horiz=TRUE, col='sienna1')
 title(main = list("(b) MCrstFA vs. MCtFA", cex = 2), outer=T, line = -2)
 dev.off()
 
