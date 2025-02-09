@@ -61,7 +61,7 @@ Please extract the file "Data-and-Code-JMVA.zip" to the "current working
 directory" of the R package. The getwd() function shall determine an
 absolute pathname of the "current working directory".
 
-Before running the codes 'fig1.R', 'fig3.R', 'figS.1.R',
+Before running the codes 'fig1.R', 'fig3.R', 'fig5.R', 'fig6.R', 'figS.1.R',
 'figS.2.R', 'figS.3.R', 'table1.R', 'table2.R', 'tableS.1.R', 'tableS.2.R', 'tableS.3.R',
 'tableS.4.R', 'simulation1.R' and 'simulation2.R', one needs to install
 the following R packages:
@@ -189,11 +189,13 @@ subfolder.
        (21) 'table5.R' main script for comparing the clustering performance under the MCFA, MCtFA and MCrstFA models by ARI and CCR;
        (22) 'tableS.7.R' main script for showing the ML estimates and standard errors for the best chosen model;
        (23) 'figS.4.R' main script for drawing the pairwise scatter plots and the marginal histograms;
-       (24) 'fig4.R' main script for drawing the BIC and ICL plots for the MCFA, MCtFA and MCrstFA models fitted to the CKD dataset.
+       (24) 'fig4.R' main script for drawing the BIC and ICL plots for the MCFA, MCtFA and MCrstFA models fitted to the CKD dataset;
+       (25) 'fig5.R' main script for plotting the profile log-likelihood function for equal nu in the MCrstFA model using the CKD dataset;
+       (26) 'fig6.R' main script for comparing factor scores between MCrstFA and MCFA, and between MCrstFA and MCtFA.
 
 ###### Note for Section 6.2 - Chronic kidney disease (CKD) dataset:
 
-Tables 4-5, Tables S.5,S.7 and Figures 4,S.4 just load 'CKD.RData' files in the './data/'.
+Tables 4-5, Tables S.5,S.7 and Figures 4-6,S.4 just load 'CKD.RData' files in the './data/'.
 The resulting Tables 4-5, Tables S.5,S.7 and Figures 4,S.4 has been stored in the
 './results/' subfolder.
 
@@ -223,22 +225,25 @@ The resulting Tables 4-5, Tables S.5,S.7 and Figures 4,S.4 has been stored in th
       (8) auto_3D_plot.eps: 3D sactter plot of the data using the 1st, 2nd and 5th factor scores calculated in the fit of MCrstFA model with g=5 and q=6;
       (9) ckd_scatter.eps: pairwise scatter plots and the marginal histograms of the 11 attributes of the CKD and non-CKD patients;
       (10) ckd_bic_icl.eps: diagrams for q=1-5 compare the performance of fitting results in terms of BIC and ICL;
-      (11) Table1.csv: summary table of the average values (Mean) of the five criteria for r=10%, 20%, 30% and 40%, and their respective standard deviations (Std) and frequencies (Freq) under the MNIG distribution;
-      (12) Table2.csv: summary table of the average values (Mean) of the five criteria for r=10%, 20%, 30% and 40%, and their respective standard deviations (Std) and frequencies (Freq) under the MSL distribution;
-      (13) Table3.csv: characterization of the automobile dataset contains 205 cars with 25 attributes, except for the ’Make’ attribute;
-      (14) Table4.csv: detailed account of different missing fractions on the basis of patient-wise, attribute-wise and observation-wise placements;
-      (15) Table5.csv: cross-tabulations of true and predicted class memberships and the corresponding CCR and ARI values for three mixtures common factor analyzers (g=2, q=4) fitted to the CKD dataset;
-      (16) TableS.1.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=0% missing values;
-      (17) TableS.2.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=10% missing values;
-      (18) TableS.3.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=20% missing values;
-      (19) TableS.4.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=30% missing values;
-      (20) TableS.5.csv: observed pairwise correlations for eleven attributes;
-      (21) TableS.7.csv: ML estimates and standard errors obtained from fitting the MCrstFA model with g=2 and q=4 for the CKD dataset;
-      (22) Sim1_TabFig; the subfolder contains model fitting results (the MCFA, MCtFA and MCrstFA models), clustering performance (ARI and CCR), and model selection criterion (BIC and ICL) under three cases of missing value from Experiment 1;
-      (23) Sim2_TableS.1(r=0): the subfolder contains the parameters estimates and the associate standard errors under r=0% missing values from Experiment 2;
-      (24) Sim2_TableS.2(r=10): the subfolder contains the parameters estimates and the associate standard errors under r=10% missing values from Experiment 2;
-      (25) Sim2_TableS.3(r=20): the subfolder contains the parameters estimates and the associate standard errors under r=20% missing values from Experiment 2;
-      (26) Sim2_TableS.4(r=30): the subfolder contains the parameters estimates and the associate standard errors under r=30% missing values from Experiment 2.
+      (11) fig5.eps: plot of the profile log-likelihood function for equal DOFs in the MCrstFA model with g=2 and q=4;
+      (12) fig6a.eps: scatter-histogram plots comparing factor scores from the fitted models: MCrstFA vs. MCFA;
+      (13) fig6b.eps: scatter-histogram plots comparing factor scores from the fitted models: MCrstFA vs. MCtFA;
+      (14) Table1.csv: summary table of the average values (Mean) of the five criteria for r=10%, 20%, 30% and 40%, and their respective standard deviations (Std) and frequencies (Freq) under the MNIG distribution;
+      (15) Table2.csv: summary table of the average values (Mean) of the five criteria for r=10%, 20%, 30% and 40%, and their respective standard deviations (Std) and frequencies (Freq) under the MSL distribution;
+      (16) Table3.csv: characterization of the automobile dataset contains 205 cars with 25 attributes, except for the ’Make’ attribute;
+      (17) Table4.csv: detailed account of different missing fractions on the basis of patient-wise, attribute-wise and observation-wise placements;
+      (18) Table5.csv: cross-tabulations of true and predicted class memberships and the corresponding CCR and ARI values for three mixtures common factor analyzers (g=2, q=4) fitted to the CKD dataset;
+      (19) TableS.1.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=0% missing values;
+      (20) TableS.2.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=10% missing values;
+      (21) TableS.3.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=20% missing values;
+      (22) TableS.4.csv: simulation results for assessing the precision of parameters estimates along with the associate standard errors across various samples sizes under the scenario of r=30% missing values;
+      (23) TableS.5.csv: observed pairwise correlations for eleven attributes;
+      (24) TableS.7.csv: ML estimates and standard errors obtained from fitting the MCrstFA model with g=2 and q=4 for the CKD dataset;
+      (25) Sim1_TabFig; the subfolder contains model fitting results (the MCFA, MCtFA and MCrstFA models), clustering performance (ARI and CCR), and model selection criterion (BIC and ICL) under three cases of missing value from Experiment 1;
+      (26) Sim2_TableS.1(r=0): the subfolder contains the parameters estimates and the associate standard errors under r=0% missing values from Experiment 2;
+      (27) Sim2_TableS.2(r=10): the subfolder contains the parameters estimates and the associate standard errors under r=10% missing values from Experiment 2;
+      (28) Sim2_TableS.3(r=20): the subfolder contains the parameters estimates and the associate standard errors under r=20% missing values from Experiment 2;
+      (29) Sim2_TableS.4(r=30): the subfolder contains the parameters estimates and the associate standard errors under r=30% missing values from Experiment 2.
 
 ###### Note for ./results:
 
