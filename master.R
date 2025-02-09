@@ -25,12 +25,14 @@ source(paste(WD.PATH, 'code/fig3.R', sep=''))
 source(paste(WD.PATH, 'code/figS.2.R', sep=''))
 source(paste(WD.PATH, 'code/figS.3.R', sep=''))
 
-# Re-produce real data (CKD dataset) results: Table 4, Table 5, Table S.5, Table S.7, Figure 4, Figure S.4
+# Re-produce real data (CKD dataset) results: Table 4, Table 5, Table S.5, Table S.7, Figure 4, Figure 5, Figure 6, Figure S.4
 source(paste(WD.PATH, 'code/table4.R', sep=''))
 source(paste(WD.PATH, 'code/table5.R', sep=''))
 source(paste(WD.PATH, 'code/tableS.5.R', sep=''))
 source(paste(WD.PATH, 'code/tableS.7.R', sep=''))
 source(paste(WD.PATH, 'code/fig4.R', sep=''))
+source(paste(WD.PATH, 'code/fig5.R', sep=''))
+source(paste(WD.PATH, 'code/fig6.R', sep=''))
 source(paste(WD.PATH, 'code/figS.4.R', sep=''))
 
 # Re-produce 'automobile.Rdata' and 'CKD.Rdata'
